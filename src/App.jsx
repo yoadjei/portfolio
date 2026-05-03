@@ -75,7 +75,7 @@ function App() {
 
     // Typewriter effects
     const headerText = useTypewriter("hi, i'm yaw osei", 50, 0);
-    const subText1 = useTypewriter("devops & software engineering", 50, 1000);
+    const subText1 = useTypewriter("devops & software engineer", 50, 1000);
     const subText2 = useTypewriter("building, deploying, automating.", 30, 1500);
 
     useEffect(() => {
@@ -172,7 +172,7 @@ function App() {
                 <section>
                     <h2 className="text-xs font-bold text-gray-400 dark:text-zinc-500 uppercase tracking-wider mb-4">Research</h2>
                     <a
-                        href="/research"
+                        href="https://yoadjei.github.io/research/"
                         className="group flex items-baseline gap-2 hover:bg-gray-50 dark:hover:bg-zinc-900 p-2 -mx-2 rounded transition-colors"
                     >
                         <span className="text-sm border-b border-gray-300 dark:border-zinc-700 pb-0.5 group-hover:border-black dark:group-hover:border-white transition-colors">
