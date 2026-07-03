@@ -5,42 +5,41 @@ import { Github, Linkedin, Moon, Sun, ArrowUpRight, Mail } from 'lucide-react';
 const EXPERIENCE = [
     {
         company: "AmaliTech",
-        role: "DevOps Intern",
-        description: "built gitlab ci/cd pipelines that cut deployment time from 30 min to under 5. containerized services with docker and set up prometheus + grafana monitoring with slack alerts for downtime.",
+        role: "Cybersecurity Intern",
+        description: "built grafana and loki dashboards for authentication and application event visibility. automated security workflows with python. analysed logs and api activity for incident investigations.",
         logo: "/amalitech.jpg",
     },
     {
         company: "ISTAD-UITS (KNUST)",
-        role: "Infrastructure Intern",
-        description: "configured vms on proxmox for university services. set up vlans and firewall rules to segment campus traffic. troubleshot network issues with packet analysis, cutting ticket resolution time.",
+        role: "Security Intern",
+        description: "configured vms on proxmox for university services. set up monitoring and log ingestion pipelines with logstash, elastic stack, and grafana.",
         logo: "/knust.jpg",
     },
     {
         company: "Ideation Axis",
         role: "Software Engineering Intern",
-        description: "built features for a django web app including auth and dashboards. refactored legacy code to cut page load times by 40%. wrote unit tests to improve reliability before releases.",
+        description: "built features for a django web app, including auth and dashboards. refactored legacy code, cutting page load times by 40%. wrote unit tests to improve release reliability.",
         logo: "/ideation.jpg",
     },
 ];
 
 const PROJECTS = [
-    {
-        title: "self-hosted gitlab",
-        description: "spun up a full gitlab instance with docker compose, including python and node runners that auto-register on boot. wrote a bash script that hits the gitlab api to generate runner tokens — no manual clicks needed. includes a sample ci pipeline and docs explaining every piece.",
-        link: "https://github.com/yoadjei/self-hosted-gitlab",
-    },
-    {
-        title: "mini etl",
-        description: "python framework for building data pipelines that extract from apis or databases, transform with custom functions, and load into csv, json, or postgres. supports scheduling, logging, and retry logic. built it to learn how tools like airflow work under the hood.",
-        link: "https://github.com/yoadjei/mini-etl",
-    },
-    {
-        title: "mframapa ai",
-        description: "air quality prediction platform covering all 54 african countries. uses xgboost trained on nasa satellite data to forecast pm2.5 levels for locations without physical sensors. fastapi backend, react frontend, deployed on aws with docker. completely free to use.",
-        link: "http://mframapaai.health/",
-    },
+{
+title: "tradax",
+description: "cryptocurrency trading platform. built the backend solo — two spring boot services for auth and wallet, postgresql data layer, jwt authentication, and a trading engine handling real transaction logic. react native frontend integrates against the rest api.",
+link: "https://github.com/yoadjei/TradaX",
+},
+{
+title: "mframapa ai",
+description: "air quality prediction platform covering all 54 african countries. built backend data pipelines to collect, validate, and process satellite and environmental sensor data. fastapi backend, react frontend, deployed on aws with docker.",
+link: "http://mframapaai.health/",
+},
+{
+title: "mini etl",
+description: "python framework for building data pipelines that extract from apis or databases, transform with custom functions, and load into csv, json, or postgres. supports scheduling, logging, and retry logic.",
+link: "https://github.com/yoadjei/mini-etl",
+},
 ];
-
 
 const useTypewriter = (text, speed = 50, startDelay = 0) => {
     const [displayText, setDisplayText] = useState('');
